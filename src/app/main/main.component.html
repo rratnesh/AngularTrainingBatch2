@@ -1,0 +1,20 @@
+<p>{{title.toUpperCase()}}</p>
+<h1 [textContent]="title"></h1>
+<div [ngStyle]="{
+    'background-color': active ? 'red' : 'green',
+    'color': active ? 'green' : 'red',
+    'font-weight': 900
+}">
+    NgStyle Demo
+</div>
+
+<button (click)="changeStyle()">Change Style</button>
+
+
+<div [ngClass]="{
+    'bgGreen' : active,
+    'isred': !active
+}">Ng Class Demo</div>
+
+
+<div [class.bgGreen]="true">NgClass Demo</div>

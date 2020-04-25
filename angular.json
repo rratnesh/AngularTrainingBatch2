@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "Batch2": {
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Batch2"
+    }
+  },
+  "defaultProject": "Batch2",
+  "cli": {
+    "analytics": "f42ea196-4f6b-42ef-b8ff-106954415a36"
+  }
 }
