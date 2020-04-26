@@ -7,15 +7,10 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  @ViewChild('myvar') myvar;
-
   constructor() {
   }
 
   ngOnInit() {
   }
 
-  show(kanika) {
-    console.log(kanika);
-  }
 }
