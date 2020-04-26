@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-main',
@@ -6,18 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-  title: string = 'Welcome'
 
-  active = true;
+  @ViewChild('myvar') myvar;
 
   constructor() {
   }
 
   ngOnInit() {
-    this.title = 'Welcome';
   }
 
-  changeStyle() {
-    this.active = !this.active;
+  show(kanika) {
+    console.log(kanika);
   }
 }
